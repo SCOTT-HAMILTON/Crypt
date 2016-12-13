@@ -27,12 +27,13 @@ void codage(void){
 		printf("%c",texte[i]);
 		}
 	}
-
-
+    printf("\nAppuyer sur une touche pour continuer...");
+    while (getchar() != '\n');
     /*.....................................*/
 	FILE *fichier = NULL;
 	fichier = fopen("source.txt","w");
 	fprintf(fichier,"%s",texte);
 	fclose(fichier);
     getchar();
+    printf("\n");
 }

@@ -34,7 +34,8 @@ void decodage(void){
 	}
 	/*......................................*/
 	printf("%s",texte);
-	int arret;
-	scanf("%d\n",&arret);
-//	printf("\napres:\n%s",texte);
+	printf("\nAppuyer sur une touche pour continuer...");
+	while (getchar() != '\n');
+	getchar();
+	printf("\n");
 }
