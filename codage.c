@@ -1,7 +1,7 @@
 #include <string.h>
 #include <stdio.h>
 
-void decodage(void){
+void codage(void){
 	printf("Entre le mot a coder\n");
 	char texte[50];
 	scanf("%s",&texte);
@@ -12,7 +12,7 @@ void decodage(void){
 	int k = 0;int taille_de_clef = strlen(clef);
 	/*.....................................*/
 	int solution = 0;
-	
+
 	for(i = 0;i <= taille; i++){
 		k = clef[i];
 			if(i > taille_de_clef){
@@ -28,12 +28,11 @@ void decodage(void){
 		}
 	}
 
-   
+
     /*.....................................*/
 	FILE *fichier = NULL;
 	fichier = fopen("source.txt","w");
 	fprintf(fichier,"%s",texte);
 	fclose(fichier);
-int arret;
-	scanf("%d",&arret);
+    getchar();
 }

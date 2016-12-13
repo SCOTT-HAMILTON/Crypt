@@ -1,0 +1,1 @@
+void decodage(void);

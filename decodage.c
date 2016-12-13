@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include <string.h>
+#include "decodage.h"
 
-int main(void){
+void decodage(void){
 	char texte[50];
-	
+
 	FILE *fichier = NULL;
 	fichier = fopen("source.txt","r");
 	while(fgets(texte,50,fichier) != NULL){}
@@ -28,7 +29,7 @@ int main(void){
 		}
 		++solution;
 		if(solution != taille +2){
-		}	
+		}
 	cle++;
 	}
 	/*......................................*/
